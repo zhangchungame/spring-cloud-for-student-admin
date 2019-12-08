@@ -8,6 +8,6 @@ import org.springframework.stereotype.Component;
 public class FeignFallBack implements StudentService {
     @Override
     public UserInfo studentHello() {
-        return null;
+        return new UserInfo("error","error");
     }
 }

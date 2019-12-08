@@ -17,8 +17,10 @@ public class StudentController {
     private String port;
 
     @RequestMapping("hello")
-    public UserInfo helloUser(){
+    public UserInfo helloUser() throws Exception {
+        System.out.println("hello");
         UserInfo userInfo=new UserInfo(port,"zhongbaban");
-        return userInfo;
+        throw new Exception("cuowu ");
+//        return userInfo;
     }
 }

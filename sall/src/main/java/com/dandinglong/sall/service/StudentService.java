@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @FeignClient(name = "admin-student",fallback = FeignFallBack.class)
 public interface StudentService {
-    @RequestMapping("/student/hello")
+    @RequestMapping("/studnet/hello")
     public UserInfo studentHello();
 }

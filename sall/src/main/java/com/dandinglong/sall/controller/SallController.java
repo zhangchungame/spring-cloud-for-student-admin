@@ -14,6 +14,7 @@ public class SallController {
 
     @RequestMapping("hello")
     public UserInfo hello(){
-        return studentService.studentHello();
+        UserInfo userInfo = studentService.studentHello();
+        return userInfo;
     }
 }
